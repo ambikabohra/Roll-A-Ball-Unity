@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{8CEE0504-0965-6765-7F66-8D032CB8F24D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_1;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_MODULAR_UNITYENGINE_ASSEMBLIES;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\AssetBundleManager\AssetBundleLoadOperation.cs" />
+     <Compile Include="Assets\AssetBundleManager\AssetBundleManager.cs" />
+     <Compile Include="Assets\AssetBundleManager\Utility.cs" />
+     <Compile Include="Assets\Script\CameraController.cs" />
+     <Compile Include="Assets\Script\PlayerController.cs" />
+     <Compile Include="Assets\Script\Rotator.cs" />
+     <Compile Include="Assets\Scripts\AssetBundlesDatabaseHandler.cs" />
+     <Compile Include="Assets\Scripts\Characters\Character.cs" />
+     <Compile Include="Assets\Scripts\Characters\CharacterAccessories.cs" />
+     <Compile Include="Assets\Scripts\Characters\CharacterCollider.cs" />
+     <Compile Include="Assets\Scripts\Characters\CharacterDatabase.cs" />
+     <Compile Include="Assets\Scripts\Characters\CharacterInputController.cs" />
+     <Compile Include="Assets\Scripts\Characters\RandomAnimation.cs" />
+     <Compile Include="Assets\Scripts\Characters\RestartRunning.cs" />
+     <Compile Include="Assets\Scripts\Coin.cs" />
+     <Compile Include="Assets\Scripts\Consumable\Consumable.cs" />
+     <Compile Include="Assets\Scripts\Consumable\ConsumableDatabase.cs" />
+     <Compile Include="Assets\Scripts\Consumable\ConsumableIcon.cs" />
+     <Compile Include="Assets\Scripts\Consumable\Types\CoinMagnet.cs" />
+     <Compile Include="Assets\Scripts\Consumable\Types\ExtraLife.cs" />
+     <Compile Include="Assets\Scripts\Consumable\Types\Invincibility.cs" />
+     <Compile Include="Assets\Scripts\Consumable\Types\Score2Multiplier.cs" />
+     <Compile Include="Assets\Scripts\CoroutineHandler.cs" />
+     <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GameManager\GameOverState.cs" />
+     <Compile Include="Assets\Scripts\GameManager\GameState.cs" />
+     <Compile Include="Assets\Scripts\GameManager\LoadoutState.cs" />
+     <Compile Include="Assets\Scripts\GameManager\Modifier.cs" />
+     <Compile Include="Assets\Scripts\Helpers.cs" />
+     <Compile Include="Assets\Scripts\LevelLoader.cs" />
+     <Compile Include="Assets\Scripts\Missions\Missions.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\AllLaneObstacle.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\Missile.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\Obstacle.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\PatrollingObstacle.cs" />
+     <Compile Include="Assets\Scripts\Obstacles\SimpleBarricade.cs" />
+     <Compile Include="Assets\Scripts\OpenURL.cs" />
+     <Compile Include="Assets\Scripts\PlayerData.cs" />
+     <Compile Include="Assets\Scripts\Pooler.cs" />
+     <Compile Include="Assets\Scripts\Sounds\AssignOutputChannel.cs" />
+     <Compile Include="Assets\Scripts\Sounds\CountdownSound.cs" />
+     <Compile Include="Assets\Scripts\Sounds\MusicPlayer.cs" />
+     <Compile Include="Assets\Scripts\Themes\ThemeData.cs" />
+     <Compile Include="Assets\Scripts\Themes\ThemeDatabase.cs" />
+     <Compile Include="Assets\Scripts\Tracks\TrackManager.cs" />
+     <Compile Include="Assets\Scripts\Tracks\TrackSegment.cs" />
+     <Compile Include="Assets\Scripts\UI\AdsForMission.cs" />
+     <Compile Include="Assets\Scripts\UI\HighscoreUI.cs" />
+     <Compile Include="Assets\Scripts\UI\Leaderboard.cs" />
+     <Compile Include="Assets\Scripts\UI\LicenceDisplayer.cs" />
+     <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\UI\MissionEntry.cs" />
+     <Compile Include="Assets\Scripts\UI\MissionUI.cs" />
+     <Compile Include="Assets\Scripts\UI\PowerupIcon.cs" />
+     <Compile Include="Assets\Scripts\UI\Settings\DataDeleteConfirmation.cs" />
+     <Compile Include="Assets\Scripts\UI\Settings\SettingPopup.cs" />
+     <Compile Include="Assets\Scripts\UI\Shop\IAPHandler.cs" />
+     <Compile Include="Assets\Scripts\UI\Shop\ShopAccessoriesList.cs" />
+     <Compile Include="Assets\Scripts\UI\Shop\ShopCharacterList.cs" />
+     <Compile Include="Assets\Scripts\UI\Shop\ShopItemList.cs" />
+     <Compile Include="Assets\Scripts\UI\Shop\ShopItemListItem.cs" />
+     <Compile Include="Assets\Scripts\UI\Shop\ShopList.cs" />
+     <Compile Include="Assets\Scripts\UI\Shop\ShopThemeList.cs" />
+     <Compile Include="Assets\Scripts\UI\Shop\ShopUI.cs" />
+     <Compile Include="Assets\Scripts\UI\StartButton.cs" />
+     <Compile Include="Assets\Scripts\WorldCurver.cs" />
+     <Compile Include="Assets\Services\Analytics\StandardEvents\AnalyticsEvent.cs" />
+     <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\AcquisitionSource.cs" />
+     <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\AcquisitionType.cs" />
+     <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\AdvertisingNetwork.cs" />
+     <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\AuthorizationNetwork.cs" />
+     <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\ScreenName.cs" />
+     <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\ShareType.cs" />
+     <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\SocialNetwork.cs" />
+     <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\StoreType.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\AnalyticsEventTracker.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\AnalyticsEventTrackerSettings.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\Payload\AnalyticsEventParam.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\Payload\StandardEvents\CustomEventPayload.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\Payload\StandardEvents\StandardEventPayload.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\TrackableProperty\TrackableField.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\TrackableProperty\TrackableProperty.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\TrackableProperty\ValueProperty.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\Trigger\Attributes\ExposedToAnalyticsAttribute.cs.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\Trigger\Enums\TriggerBool.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\Trigger\Enums\TriggerLifecycleEvent.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\Trigger\Enums\TriggerOperator.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\Trigger\Enums\TriggerType.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\Trigger\EventTrigger.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\Trigger\TrackableTrigger.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\Trigger\TriggerMethod.cs" />
+     <Compile Include="Assets\Services\Analytics\Tracker\Trigger\TriggerRule.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Gameplay\ShapeMovementController.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Gameplay\TetrisShape.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Managers\AdvertisementManager.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Managers\AnalyticsManager.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Managers\AudioManager.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Managers\CameraManager.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Managers\ColorManager.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Managers\GameManager.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Managers\GridManager.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Managers\Managers.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Managers\PlayerInputManager.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Managers\ScoreManager.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Managers\SpawnManager.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Managers\UIManager.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\States\_StatesBase.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\States\GameOverState.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\States\GamePlayState.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\States\MenuState.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\UI\AdButtons.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\UI\Buttons\ContinueButton.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\UI\Buttons\GameBackButton.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\UI\Buttons\PlayerStatsButton.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\UI\Buttons\RestartButton.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\UI\Buttons\SettingsButton.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\UI\GameOverPopUp.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\UI\InGameUI.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\UI\MainMenu.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\UI\PopUp.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\UI\SettingsMenu.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\UI\StatsUI.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Utils\CameraShake.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Utils\Constants.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Utils\PersistentSingleton.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Utils\PlayerStats.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Utils\ScriptableObjectUtility.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Utils\TimeUtil.cs" />
+     <Compile Include="Assets\Tetris Template\Scripts\Utils\Vector2Extension.cs" />
+     <None Include="Assets\Tetris Template\Plugins\3rd Party\DOTween\readme.txt" />
+     <None Include="Assets\Shaders\CurvedRotation.shader" />
+     <None Include="Assets\Tetris Template\Plugins\3rd Party\DOTween\DOTween43.xml" />
+     <None Include="Assets\Link.xml" />
+     <None Include="Assets\Shaders\VertexColor.shader" />
+     <None Include="Assets\Shaders\CurvedCode.cginc" />
+     <None Include="Assets\Services\Analytics\Tracker\README.txt" />
+     <None Include="Assets\Tetris Template\Plugins\3rd Party\DOTween\DOTween50.xml" />
+     <None Include="Assets\Shaders\CurvedUnlit.shader" />
+     <None Include="Assets\INSTRUCTIONS.txt" />
+     <None Include="Assets\Shaders\CurvedUnlitCloud.shader" />
+     <None Include="Assets\Services\Analytics\StandardEvents\README.txt" />
+     <None Include="Assets\Tetris Template\Plugins\3rd Party\DOTween\DOTween46.xml" />
+     <None Include="Assets\Shaders\UnlitBlinking.shader" />
+     <None Include="Assets\Shaders\CurvedUnlitAlpha.shader" />
+     <None Include="Assets\StreamingAssets\place AssetBundles folder here.txt" />
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>/Users/ambikabohra/Documents/rollingBall/Assets/Tetris Template/Plugins/3rd Party/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>/Users/ambikabohra/Documents/rollingBall/Assets/Tetris Template/Plugins/3rd Party/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Users/ambikabohra/Documents/rollingBall/Assets/Tetris Template/Plugins/3rd Party/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>/Users/ambikabohra/Documents/rollingBall/Assets/Tetris Template/Plugins/3rd Party/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
